@@ -1,0 +1,78 @@
+INSERT INTO table_name (column1, column2, ... )
+VALUES (value1, value2, ... )
+;
+
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition
+;
+
+DELETE FROM table_name
+WHERE condition
+;
+
+SELECT * FROM Instructor;
+
+
+INSERT INTO Instructor(ins_id, lastname, firstname, city, country)
+VALUES(4, 'Saha', 'Sandip', 'Edmonton', 'CA');
+
+
+INSERT INTO Instructor(ins_id, lastname, firstname, city, country)
+VALUES
+(5, 'Doe', 'John', 'Sydney', 'AU'), 
+(6, 'Doe', 'Jane', 'Dhaka', 'BD');
+
+
+INSERT INTO Instructor(ins_id, lastname, firstname, city, country)
+VALUES(7, 'Cangiano', 'Antonio', 'Vancouver', 'CA');
+
+SELECT * FROM Instructor;
+
+
+INSERT INTO Instructor(ins_id, lastname, firstname, city, country)
+VALUES
+(8, 'Ryan', 'Steve', 'Barlby', 'GB'), 
+(9, 'Sannareddy', 'Ramesh', 'Hyderabad', 'IN');
+
+SELECT * FROM Instructor;
+
+
+UPDATE Instructor 
+SET city='Toronto' 
+WHERE firstname="Sandip";
+
+SELECT * FROM Instructor;
+
+
+UPDATE Instructor 
+SET city='Dubai', country='AE' 
+WHERE ins_id=5;
+
+SELECT * FROM Instructor;
+
+
+UPDATE Instructor 
+SET city='Markham' 
+WHERE ins_id=1;
+
+SELECT * FROM Instructor;
+
+
+UPDATE Instructor 
+SET city='Dhaka', country='BD' 
+WHERE ins_id=4;
+
+SELECT * FROM Instructor;
+
+
+DELETE FROM instructor
+WHERE ins_id = 6;
+
+SELECT * FROM Instructor;
+
+
+DELETE FROM instructor
+WHERE firstname = 'Hima';
+
+SELECT * FROM Instructor;
