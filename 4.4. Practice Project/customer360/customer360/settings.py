@@ -21,17 +21,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-#u10bi@8x0lfl#+-kn8z@pj3j-((b$wjgvi21_)6o0b3162@!8'
+SECRET_KEY = 'django-insecure-c!hv%2amnuzq@hyqtql)fvffp4fk337$mi%n07v@9nvf*op3sf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS=["*"]
 
-CSRF_TRUSTED_ORIGINS = ['https://*.cognitiveclass.ai']
-
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'customer360'
 ]
+
+CSRF_TRUSTED_ORIGINS = ['https://*.cognitiveclass.ai']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
